@@ -1,27 +1,65 @@
-##How to Run
+# Ecommerce Analytics SQL System
 
-Open EcommerceAnalytics.db using DB Browser for SQLite. Navigate to the Execute SQL tab, then load queries from the /queries folder. Run each query to generate results. Output will display directly in the results grid below the editor.
+## Overview
 
-##Key Outputs
+SQL-based e-commerce analytics project built to simulate real-world business reporting. It models customers, products, and orders, then applies analytical SQL to extract revenue insights, customer lifetime value (LTV), and performance rankings.
 
-Customer Lifetime Value ranking using window functions
-Product revenue ranking based on total sales contribution
-Monthly revenue aggregation and trend analysis
-Running revenue growth to track performance over time
+---
 
-##What This Demonstrates
+## Features
 
-Relational database design and structured data modeling
-Use of SQL aggregation, joins, and grouping logic
-Application of window functions for ranking and analytics
-Basic business intelligence pipeline built entirely in SQL
+### Database Design
 
-##Deliverable
+* Normalized schema (Customers, Products, Categories, Orders, OrderItems)
+* Proper foreign key relationships
 
-SQLite database file (EcommerceAnalytics.db)
-SQL query scripts (/queries folder)
-Analytical output tables for reporting and insight extraction
+### Analytics
 
-##Author
+* Total and per-product revenue analysis
+* Customer Lifetime Value (LTV) calculation
+* Monthly revenue trends
+* Top customer identification
 
-Dare
+### Advanced SQL
+
+* Window functions: `RANK()`, `ROW_NUMBER()`, `DENSE_RANK()`, `NTILE()`, `LAG()`
+* CTE-based analysis
+* Views for reusable reporting logic
+* Stored procedures for automation
+
+---
+
+## Key Insight Outputs
+
+* Top 10% customers by spending (LTV segmentation)
+* Revenue distribution across products
+* Month-over-month revenue trend
+* Customer ranking by value contribution
+
+---
+
+## Tech Used
+
+* SQL (MySQL / PostgreSQL compatible concepts)
+* Window Functions
+* CTEs
+* Stored Procedures
+* Relational Database Design
+
+---
+
+## Project Structure
+
+```
+/queries
+/scheme and data
+/queries
+/screenshots
+README.md
+```
+
+---
+
+## Outcome
+
+Built a structured SQL analytics system demonstrating business intelligence workflows: data modeling, aggregation, segmentation, and revenue analysis.
