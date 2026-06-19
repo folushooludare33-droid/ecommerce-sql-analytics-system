@@ -1,67 +1,27 @@
-# E-commerce SQL Analytics System (SQLite)
+##How to Run
 
-## Overview
-This project simulates a real-world e-commerce analytics system using SQLite. It models customers, products, orders, and order items, then applies analytical SQL techniques to extract business insights such as customer lifetime value, product performance, and revenue trends.
+Open EcommerceAnalytics.db using DB Browser for SQLite. Navigate to the Execute SQL tab, then load queries from the /queries folder. Run each query to generate results. Output will display directly in the results grid below the editor.
 
----
+##Key Outputs
 
-## Objectives
-- Design a normalized relational database
-- Build a transactional dataset
-- Perform business analytics using SQL
-- Use advanced SQL features (CTEs and window functions)
-- Simulate real e-commerce reporting systems
+Customer Lifetime Value ranking using window functions
+Product revenue ranking based on total sales contribution
+Monthly revenue aggregation and trend analysis
+Running revenue growth to track performance over time
 
----
+##What This Demonstrates
 
-## Database Schema
+Relational database design and structured data modeling
+Use of SQL aggregation, joins, and grouping logic
+Application of window functions for ranking and analytics
+Basic business intelligence pipeline built entirely in SQL
 
-### Tables
+##Deliverable
 
-- Customers
-- Products
-- Categories
-- Orders
-- OrderItems
+SQLite database file (EcommerceAnalytics.db)
+SQL query scripts (/queries folder)
+Analytical output tables for reporting and insight extraction
 
-### Relationships
+##Author
 
-- Customers → Orders (1 to many)
-- Orders → OrderItems (1 to many)
-- Products → OrderItems (many to 1)
-- Categories → Products (1 to many)
----
-
-## Key Features
-
-### 1. Customer Lifetime Value (LTV)
-- Calculates total revenue per customer
-- Ranks customers using RANK()
-- Segments customers using NTILE(10)
-
-### 2. Product Performance Analysis
-- Revenue per product
-- Product ranking by sales contribution
-
-### 3. Monthly Revenue Trends
-- Aggregates revenue by month and year
-- Identifies sales performance over time
-
-### 4. Running Revenue Growth
-- Uses window functions to calculate cumulative revenue
-- Tracks business growth over time
----
-
-## SQL Concepts Used
-
-- SELECT, JOIN, GROUP BY
-- Common Table Expressions (CTEs)
-- Window Functions:
-  - RANK()
-  - NTILE()
-  - SUM() OVER()
-- Aggregation and time-series analysis
-- SQLite views (procedure alternatives)
----
-
-## Project Structure
+SQL Analytics Portfolio Project
