@@ -30,7 +30,6 @@ This project simulates a real-world e-commerce analytics system using SQLite. It
 - Orders → OrderItems (1 to many)
 - Products → OrderItems (many to 1)
 - Categories → Products (1 to many)
-
 ---
 
 ## Key Features
@@ -51,7 +50,6 @@ This project simulates a real-world e-commerce analytics system using SQLite. It
 ### 4. Running Revenue Growth
 - Uses window functions to calculate cumulative revenue
 - Tracks business growth over time
-
 ---
 
 ## SQL Concepts Used
@@ -64,7 +62,6 @@ This project simulates a real-world e-commerce analytics system using SQLite. It
   - SUM() OVER()
 - Aggregation and time-series analysis
 - SQLite views (procedure alternatives)
-
 ---
 
 ## Project Structure
